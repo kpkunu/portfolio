@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +18,35 @@ body {
   font-weight: 600;
   background-color: rgb(1, 12, 44);
   color: white;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 15;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(27, 0, 86);
+  height: 5rem;
+}
+
+nav .rightsection ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+nav .rightsection ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .leftsection {
+  font-size: 2rem;
 }
 
 /* First Section */
@@ -68,6 +101,7 @@ h1 {
   font-size: larger;
   flex: 2;
   padding: 2rem;
+  text-align: start;
 }
 
 .textabout p {
@@ -77,22 +111,26 @@ h1 {
 
 /* Third Section - Projects */
 .projectsection {
-  padding-top: 18rem;
-  padding-bottom: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   background-color: rgb(1, 12, 44);
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8rem;
-  padding-bottom: 5rem;
+
+}
+
+.projectsection h1 {
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+
+
 }
 
 .allproject {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 2rem;
+
+
 }
 
 .project {
@@ -150,21 +188,25 @@ h1 {
 
 /* Skills Section */
 .skillsection {
-  margin: 3vh;
-  padding: 2vh;
+  /* margin-right: -4vh; */
+  /* padding: 2vh; */
   background-color: rgb(1, 12, 44);
   border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   padding-top: 16rem;
   padding-bottom: 15rem;
 }
 
+.allskill {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2em;
+  margin-top: 6em;
+  gap: 2em;
+}
+
 .skill {
-  margin: 20px;
+
   padding: 20px;
   background-color: #333;
   border-radius: 10px;
@@ -200,15 +242,19 @@ h1 {
   padding: 2vh;
   background-color: rgb(1, 12, 44);
   border-radius: 10px;
+
+
+  padding-bottom: 2rem;
+}
+
+.contact-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
-  padding-top: 16rem;
-  padding-bottom: 15rem;
 }
 
 .contact-info {
+
   flex: 1;
   margin: 20px;
   padding: 20px;
@@ -315,7 +361,7 @@ footer a {
 .copyright {
   color: white;
   opacity: 0.7;
-  width: 100vw;
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -323,13 +369,9 @@ footer a {
 .socialmedia {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-.skillsection h1,
-.projectsection h1,
-.contactsection h1 {
-  margin-left: 100px;
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -368,6 +410,15 @@ footer a {
     font-size: 1.5em;
   }
 
+  .allskill,
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+
+  }
+
   .about-content,
   .project,
   .skill,
@@ -384,6 +435,7 @@ footer a {
   .contact-info,
   .contact-form {
     width: 90%;
+    text-align: start;
   }
 
   /* Adjustments for Text and Spacing */
@@ -391,11 +443,12 @@ footer a {
   h3 {
     font-size: 1.8rem;
     margin: 1rem 0;
+    text-align: center;
   }
 
   p,
   ul {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0.5rem 0;
   }
 
@@ -410,7 +463,7 @@ footer a {
   }
 
   .socialmedia {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
   }
 }
