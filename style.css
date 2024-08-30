@@ -16,36 +16,6 @@ body {
   color: white;
 }
 
-/* Header and Navigation */
-header {
-  top: 0;
-  position: sticky;
-  z-index: 15;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(27, 0, 86);
-  height: 5rem;
-}
-
-nav .rightsection ul {
-  display: flex;
-  gap: 1em;
-  list-style: none;
-}
-
-nav .rightsection ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-nav .leftsection {
-  font-size: 2rem;
-}
-
 /* First Section */
 .firstsection {
   margin: 3vh;
@@ -261,20 +231,16 @@ h1 {
 
 .contact-info li {
   margin-bottom: 10px;
-
 }
 
 .contact-info a {
   text-decoration: none;
   color: white;
-  /* or any other color you prefer */
 }
 
 .contact-info a:hover {
   color: #f2ff00;
-  /* Optional: change color on hover */
 }
-
 
 .contact-info i {
   font-size: 24px;
@@ -369,12 +335,10 @@ footer a {
 
   header {
     position: static;
-    /* Makes the navbar non-sticky */
   }
 
   nav {
     flex-direction: column;
-    /* Stack navigation items vertically */
     height: auto;
     padding: 1rem;
   }
@@ -383,12 +347,10 @@ footer a {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5em;
-    /* Reduced gap for better spacing on small screens */
   }
 
   nav .leftsection {
     font-size: 1.5rem;
-    /* Smaller font size for the logo/text */
   }
 
   /* Content Sections */
@@ -398,15 +360,12 @@ footer a {
   .skillsection,
   .contactsection {
     flex-direction: column;
-    /* Stack elements vertically */
     padding: 1rem;
   }
 
   .firstsection .left {
     margin-top: 10vh;
-    /* Reduce margin for better alignment */
     font-size: 1.5em;
-    /* Smaller font size */
   }
 
   .about-content,
@@ -415,10 +374,8 @@ footer a {
   .contact-info,
   .contact-form {
     flex-direction: column;
-    /* Stack elements vertically */
     align-items: center;
     text-align: center;
-    /* Center-align text */
     margin: 1rem 0;
   }
 
@@ -427,41 +384,33 @@ footer a {
   .contact-info,
   .contact-form {
     width: 90%;
-    /* Reduce width for better fit on small screens */
   }
 
   /* Adjustments for Text and Spacing */
   h1,
   h3 {
     font-size: 1.8rem;
-    /* Reduce font size for headings */
     margin: 1rem 0;
   }
 
   p,
   ul {
     font-size: 1rem;
-    /* Reduce font size for paragraphs and lists */
     margin: 0.5rem 0;
   }
 
   .profile-photo {
     width: 150px;
-    /* Smaller profile photo */
   }
 
   /* Footer */
   footer {
     padding: 1rem;
     height: auto;
-
-    /* Auto height for better fit */
   }
 
   .socialmedia {
     flex-direction: column;
-    /* Stack social media icons vertically */
     gap: 0.5rem;
-    /* Smaller gap between icons */
   }
 }
